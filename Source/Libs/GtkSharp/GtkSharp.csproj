@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageId>GtkSharp-signed</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <PackageIconUrl>https://raw.githubusercontent.com/GtkSharp/GtkSharp/develop/Source/Libs/GtkSharp/Icon.png</PackageIconUrl>
@@ -9,6 +10,9 @@
     <RepositoryUrl>https://github.com/GtkSharp/GtkSharp</RepositoryUrl>
     <Description>GtkSharp is a C# wrapper for the Gtk library.</Description>
     <PackageTags>gtk;gtksharp;gtk-sharp;wrapper</PackageTags>
+    <PackageLicenseExpression>LGPL-2.0-or-later</PackageLicenseExpression>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\GtkSharp.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>..\..\..\BuildOutput\Debug</OutputPath>

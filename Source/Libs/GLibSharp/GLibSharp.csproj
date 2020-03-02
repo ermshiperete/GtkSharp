@@ -1,12 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PackageId>GLibSharp-signed</PackageId>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <PackageLicenseExpression>LGPL-2.0-or-later</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/GtkSharp/GtkSharp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/GtkSharp/GtkSharp</RepositoryUrl>
     <Description>GLibSharp is a C# wrapper for the GLib library.</Description>
     <PackageTags>glib;glibsharp;glib-sharp;wrapper</PackageTags>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\GtkSharp.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <OutputPath>..\..\..\BuildOutput\Debug</OutputPath>
